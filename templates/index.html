@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+<h1 class="firsth1">Huge Selection of TV's, All Models, All Sizes, Low Prices!!!</h1>
+    <p class="firstp"><span>Shop</span> for all your TV entertainment experience.</p>
+    <p class="border"></p>
+
+    <div class="flex-container">
+        
+            <div class="flex-child">
+                <h3> Newest Arrival</h3> <!-- Insert Product Description -->
+                <img src="/static/images/big-tv-img.jpg" alt="bigtv">
+            </div>
+
+            <div class="flex-child ">
+                <h4 class="popular-h4"> Poplular Items</h4> <!-- Insert Product Description -->
+                <ul class="popular-items-ul ">
+                    <div class="container">
+                        <img class="product" src="/static/images/tv1.jpg" alt="Hisense">
+                        <img class="product" id ="TCL" src="/static/images/tv2.jpg" alt="Samsung">
+                        <img class="product" src="/static/images/tv3.jpg" alt="TCL">
+                    </div>
+
+                </ul>
+            </div>
+            <div class="flex-child">
+                <div class="dealoftheday">
+                    <h4>Deal of the day!</h4>
+                    <img class="deal-of-day" src="/static/images/deal-of-day.jpg" alt="tv">
+                    <div class="item-description">
+                        <p>Item description</p>
+                        <p>Price $0.00</p>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <hr />
+    <hr />
+{% endblock content %}

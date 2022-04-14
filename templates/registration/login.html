@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+
+{% block title %}Log In{% endblock title %}
+
+
+{% block content %}
+
+
+
+<h1>TV Store login page</h1>
+
+<div class=login_form>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value= "log In" class="btn btn-success">
+    </form>
+</div>
+
+{% endblock content %}

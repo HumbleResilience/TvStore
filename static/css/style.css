@@ -1,0 +1,434 @@
+
+
+
+
+
+.topnav{
+    display:none;
+}
+
+*{
+    margin:0;
+    padding:0;
+
+}
+body{
+    background-color: lightgray;
+    font-family: 'Times New Roman';
+}
+
+img{
+    max-width: 50%;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*menu*/
+.navbar{
+
+    justify-content: space-between;
+    align-items: center;
+    height:70px;
+    position: fixed;
+}
+
+.logo{
+    height: 40px;
+}
+
+.logo-text{
+    white-space: nowrap;
+    padding: 1rem;
+    font-family: 'Times New Roman';
+    font-size: 1.5rem;
+    color: rgb(226, 238, 66);
+}
+
+.nav-item {
+    margin-top: 0rem;
+    margin-left: 10rem;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
+}
+
+.d-flex {
+    margin-left: 22rem;
+    display: none;
+}
+
+.btn {
+    margin-left: .4rem;
+}
+/*end of menu*/
+
+/* Openning Statement*/
+header{
+    height: 200px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+header h1{
+    font-family: 'Times New Roman';
+    color: black;
+    text-align: center;
+}
+header p{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+header p span{
+    border-bottom: 2px solid rgb(57, 176, 255);
+    line-height: 2;
+    color: black;
+}
+
+.border {
+    border-bottom: 3px solid rgb(55, 74, 241);
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ------------------end navbar---------------------------------- */
+
+
+
+
+h1{
+    text-align:center;
+}
+.firstp{
+    text-align:center;
+}
+
+
+
+
+/*end of statement*/
+
+/*Big TV Box*/
+
+.flex-container{
+    display:flex;
+
+}
+.flex-child{
+    flex:1;
+    
+    text-align:center;
+    padding:0;
+    margin:0;
+}
+
+
+
+
+.big-tv{
+    margin-top:20%;
+    max-width:30%;
+   text-align:center;
+   padding-bottom:10px;
+   
+}
+
+.col2 {
+    margin-left: 10rem;
+    margin-right: 5rem;
+    }
+
+.container { 
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+    margin-top:-90px;
+}
+
+.product{
+    display:flex;
+    margin: 5px;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    }
+
+    
+
+/* End of Big TV*/
+h2 {
+    font-family: 'Times New Roman';
+    font-size: 1.5rem;
+    padding-left: .5rem;
+}
+/* Popular Item Flex Box */
+
+
+
+#tv1{
+    width: 15rem;
+    height:auto;
+    padding:20%;
+    
+    
+}
+#tv2{
+    width:15rem;
+    height:auto;
+    padding:20%;
+    
+}
+#tv3{
+    width:20rem;
+    height:auto;
+    padding:20%;
+    margin-bottom:5rem;
+    
+}
+
+
+.popular-items-h3{
+    text-align:center;
+
+}
+
+
+/* End of Popular*/
+
+/* Deals*/
+.deal-of-day{
+    width:50%;
+    position:relative;
+}
+
+.deals{
+    
+    max-width:90%;
+    text-align:center;
+    margin-left:30px;
+}
+
+
+/* End of Deals */
+
+
+h4 {
+    font-family: 'Times New Roman';
+    white-space: nowrap;
+}
+
+p {
+    white-space: nowrap;
+}
+
+/*Bottom Nav Footer*/
+.nav-footer {
+    font-family: 'Times New Roman';
+    font-size: 1.2rem;
+    font-weight: .3rem;
+    margin-top: .4rem;
+}
+.footer1 {
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0rem;
+    width: 100%;
+    height: 40px;
+}
+
+.navbar-text {
+    font-family: 'Times New Roman';
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin-bottom: .3rem;
+    color: white;
+}
+
+.social {
+    margin-top: .4rem;
+}
+
+.footer{
+    display:flex;
+    
+}
+.socialul{
+    display:flex;
+    
+}
+
+.fa-brands{
+    padding:1rem;
+    padding-top:1rem
+    
+}
+
+.nav-item{
+    padding-top:10px;
+}
+
+.fa-chevron-left{
+    margin-top:10rem;
+    width:5rem;
+}
+.right-arrow{
+    margin-top:10rem;
+    width:5rem;
+}
+
+.footer1{
+    display:flex;
+    justify-content: space-between;
+}
+
+
+/* 
+------about me----------- */
+
+.image-container-div{
+    display:flex;
+}
+
+
+.aboutme-col1{
+    width:50%;
+    text-align:center;
+    background-color:darkgray;
+    padding:10px;
+    margin-right:50px;
+    white-space: normal;
+    margin-left:50px;
+
+    
+}
+
+.about-image-1{
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+}
+
+.about-image-2{
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+}
+
+
+
+.aboutme-p-wrapper{
+    display:flex;
+
+}
+p{
+    white-space:normal;
+}
+/* ---------------------Registration---------------------------- */
+
+.login_form{
+   text-align:center;
+    padding:50px;
+}
+.signup_form{
+    padding:50px;
+    margin-left:35%
+}
+
+
+/* --------------------------------------------------- */
+
+
+
+@media screen and (max-width: 1251px){
+
+    /* ----------Index----------- */
+    .navbar{
+       display:none;
+    }
+
+    h1{
+        padding:20px;
+        width:50%;
+        margin-left:12rem;
+        margin-top:5rem;
+    }
+    
+.container-big{
+    margin-left:13rem;
+}
+
+.popular{
+    margin-left:5rem;
+
+    
+}
+.col2{
+    margin-right:13rem;
+}
+.container{
+    width:100%;
+   
+    
+}
+.flex-container{
+    display:block;
+}
+.popular-h4{
+    margin-top:5rem;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  display:block;
+  width:100%
+
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: none;
+  width: 100%;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* ----------About----------- */
+
+.about-image-1{
+    width:100%;
+    margin:0;
+}
+.aboutme-p-wrapper{
+    display:block;
+    margin-top:15rem;
+    text-align:center;
+    margin-left:15rem;
+}
