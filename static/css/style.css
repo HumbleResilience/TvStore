@@ -62,6 +62,8 @@ a{
 .btn {
     margin-left: .4rem;
 }
+
+
 /*end of menu*/
 
 /* Openning Statement*/
@@ -115,10 +117,11 @@ h1{
 
 /*end of statement*/
 
-/*Big TV Box*/
+/*--------Newest Arrival --------*/
 
 .flex-container{
     display:flex;
+    
 
 }
 .flex-child{
@@ -152,7 +155,9 @@ h1{
     justify-content: space-around;
     margin-bottom: 5rem;
     margin-top:-90px;
+    background-color:darkgray;
 }
+
 
 .product{
     display:flex;
@@ -166,7 +171,7 @@ h1{
 
     
 
-/* End of Big TV*/
+/* End of Newest arrival */
 h2 {
     font-family: 'Times New Roman';
     font-size: 1.5rem;
@@ -232,7 +237,104 @@ p {
     white-space: nowrap;
 }
 
-/*Bottom Nav Footer*/
+
+
+/* 
+------about me----------- */
+
+.image-container-div{
+    display:flex;
+    
+}
+
+
+.aboutme-col1{
+    width:50%;
+    text-align:center;
+    background-color:darkgray;
+    padding:10px;
+    margin-right:50px;
+    white-space: normal;
+    margin-left:50px;
+
+    
+}
+
+.about-image-1{
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+}
+
+.about-image-2{
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+}
+
+
+
+.aboutme-p-wrapper{
+    display:flex;
+    background-color:darkgray;
+
+}
+p{
+    white-space:normal;
+}
+/* ---------------------Registration---------------------------- */
+
+.login_form{
+   text-align:center;
+    padding:50px;
+    background-color:darkgray;
+}
+
+.registeration-error{
+    text-align:center;
+    color:red;
+}
+.signup_form{
+    padding:50px;
+    margin-left:35%
+}
+
+.signup-form-wrapper{
+    background-color:darkgray;
+}
+
+
+
+/* ----------------------Contactus----------------------------- */
+
+.contactus{
+    text-align: center;
+    padding:50px;
+    background-color:darkgray;
+}
+
+
+/* ---------------------Dashboard-------------------------- */
+#dash-h1{
+    border-bottom: 1px solid gray;
+    padding:10px;
+}
+
+
+.dashboard-list{
+    text-align:center;
+    padding:10px;
+}
+.password-reset{
+    text-decoration:none;
+    color:black;
+}
+.password-reset:hover{
+    color:darkgray;
+}
+
+/* ---------------------Footer------------------------------- */
+
 .nav-footer {
     font-family: 'Times New Roman';
     font-size: 1.2rem;
@@ -269,9 +371,10 @@ p {
 }
 
 .fa-brands{
+    color: lightgray;
     padding:1rem;
     padding-top:1rem
-    
+ 
 }
 
 .nav-item{
@@ -291,64 +394,6 @@ p {
     display:flex;
     justify-content: space-between;
 }
-
-
-/* 
-------about me----------- */
-
-.image-container-div{
-    display:flex;
-}
-
-
-.aboutme-col1{
-    width:50%;
-    text-align:center;
-    background-color:darkgray;
-    padding:10px;
-    margin-right:50px;
-    white-space: normal;
-    margin-left:50px;
-
-    
-}
-
-.about-image-1{
-    width: 100%;
-    max-width: 100px;
-    height: auto;
-}
-
-.about-image-2{
-    width: 100%;
-    max-width: 100px;
-    height: auto;
-}
-
-
-
-.aboutme-p-wrapper{
-    display:flex;
-
-}
-p{
-    white-space:normal;
-}
-/* ---------------------Registration---------------------------- */
-
-.login_form{
-   text-align:center;
-    padding:50px;
-}
-.signup_form{
-    padding:50px;
-    margin-left:35%
-}
-
-
-/* --------------------------------------------------- */
-
-
 
 @media screen and (max-width: 1251px){
 
@@ -430,5 +475,6 @@ p{
     display:block;
     margin-top:15rem;
     text-align:center;
-    margin-left:15rem;
+  
+
 }
