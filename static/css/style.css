@@ -60,6 +60,10 @@ display: none;
 margin-left: .4rem;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 90239469875d972b222030f9e9e3a4b899ca6418
 /*end of menu*/
 
 /* Openning Statement*/
@@ -102,8 +106,29 @@ margin-right: auto;
 
 
 
+<<<<<<< HEAD
 h1 {
 text-align: center;
+=======
+h1{
+    text-align:center;
+}
+.firstp{
+    text-align:center;
+}
+
+
+
+
+/*end of statement*/
+
+/*--------Newest Arrival --------*/
+
+.flex-container{
+    display:flex;
+    
+
+>>>>>>> 90239469875d972b222030f9e9e3a4b899ca6418
 }
 
 .firstp {
@@ -111,7 +136,40 @@ text-align: center;
 }
 
 
+<<<<<<< HEAD
 
+=======
+.container { 
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+    margin-top:-90px;
+    background-color:darkgray;
+}
+
+
+.product{
+    display:flex;
+    margin: 5px;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    }
+
+    
+
+/* End of Newest arrival */
+h2 {
+    font-family: 'Times New Roman';
+    font-size: 1.5rem;
+    padding-left: .5rem;
+}
+/* Popular Item Flex Box */
+>>>>>>> 90239469875d972b222030f9e9e3a4b899ca6418
 
 /*end of statement*/
 
@@ -217,6 +275,7 @@ to {
 /*end of Newest Arrival */
 
 
+<<<<<<< HEAD
 /*Bottom Nav Footer*/
 .nav-footer {
     font-family: 'Times New Roman';
@@ -278,13 +337,21 @@ to {
     display: flex;
     justify-content: space-between;
 }
+=======
+>>>>>>> 90239469875d972b222030f9e9e3a4b899ca6418
 
 
 /* 
 ------about me----------- */
 
+<<<<<<< HEAD
 .image-container-div {
     display: flex;
+=======
+.image-container-div{
+    display:flex;
+    
+>>>>>>> 90239469875d972b222030f9e9e3a4b899ca6418
 }
 
 
@@ -314,8 +381,14 @@ to {
 
 
 
+<<<<<<< HEAD
 .aboutme-p-wrapper {
     display: flex;
+=======
+.aboutme-p-wrapper{
+    display:flex;
+    background-color:darkgray;
+>>>>>>> 90239469875d972b222030f9e9e3a4b899ca6418
 
 }
 
@@ -325,9 +398,21 @@ p {
 
 /* ---------------------Registration---------------------------- */
 
+<<<<<<< HEAD
 .login_form {
     text-align: center;
     padding: 50px;
+=======
+.login_form{
+   text-align:center;
+    padding:50px;
+    background-color:darkgray;
+}
+
+.registeration-error{
+    text-align:center;
+    color:red;
+>>>>>>> 90239469875d972b222030f9e9e3a4b899ca6418
 }
 
 .signup_form {
@@ -335,10 +420,101 @@ p {
     margin-left: 35%
 }
 
+.signup-form-wrapper{
+    background-color:darkgray;
+}
 
-/* --------------------------------------------------- */
 
 
+/* ----------------------Contactus----------------------------- */
+
+.contactus{
+    text-align: center;
+    padding:50px;
+    background-color:darkgray;
+}
+
+
+/* ---------------------Dashboard-------------------------- */
+#dash-h1{
+    border-bottom: 1px solid gray;
+    padding:10px;
+}
+
+
+.dashboard-list{
+    text-align:center;
+    padding:10px;
+}
+.password-reset{
+    text-decoration:none;
+    color:black;
+}
+.password-reset:hover{
+    color:darkgray;
+}
+
+/* ---------------------Footer------------------------------- */
+
+.nav-footer {
+    font-family: 'Times New Roman';
+    font-size: 1.2rem;
+    font-weight: .3rem;
+    margin-top: .4rem;
+}
+.footer1 {
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0rem;
+    width: 100%;
+    height: 40px;
+}
+
+.navbar-text {
+    font-family: 'Times New Roman';
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin-bottom: .3rem;
+    color: white;
+}
+
+.social {
+    margin-top: .4rem;
+}
+
+.footer{
+    display:flex;
+    
+}
+.socialul{
+    display:flex;
+    
+}
+
+.fa-brands{
+    color: lightgray;
+    padding:1rem;
+    padding-top:1rem
+ 
+}
+
+.nav-item{
+    padding-top:10px;
+}
+
+.fa-chevron-left{
+    margin-top:10rem;
+    width:5rem;
+}
+.right-arrow{
+    margin-top:10rem;
+    width:5rem;
+}
+
+.footer1{
+    display:flex;
+    justify-content: space-between;
+}
 
 @media screen and (max-width: 1251px) {
 
@@ -420,9 +596,18 @@ p {
         margin: 0;
     }
 }
+<<<<<<< HEAD
 .aboutme-p-wrapper {
     display: block;
     margin-top: 15rem;
     text-align: center;
     margin-left: 15rem;
+=======
+.aboutme-p-wrapper{
+    display:block;
+    margin-top:15rem;
+    text-align:center;
+  
+
+>>>>>>> 90239469875d972b222030f9e9e3a4b899ca6418
 }

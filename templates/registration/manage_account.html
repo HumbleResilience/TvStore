@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+
+{% block title %}Dashboard{% endblock title %}
+
+
+{% block content %}
+
+
+
+<h1 id="dash-h1">User Dashboard</h1>
+<div class="dash-container">
+    <div class="dashboard-list">
+        <ul>
+            <li><h4><a class="password-reset" href="{% url 'change-password' %}"> Change Password</a></h4></li>
+        </ul>
+        
+    </div>
+</div>
+
+{% endblock content %}
