@@ -1,5 +1,6 @@
 
 
+from re import template
 from django.views.generic import TemplateView
 
 
@@ -27,6 +28,12 @@ class LogoutPageView(TemplateView):
 
 class PasswordChangePageView(TemplateView):
     template_name = "registration/password_change.html"
+
+class CatalogPageView(TemplateView):
+    template_name = "catalog.html"
+
+class CheckoutPageView(TemplateView):
+    template_name = "checkout.html"
 
 
 
