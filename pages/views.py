@@ -27,7 +27,8 @@ class CatalogPageView(TemplateView):
 class CheckoutPageView(TemplateView):
     template_name = "checkout.html"
 
-
+class PasswordChangePageView(TemplateView):
+    template_name = "change-password.html"
 
 
         

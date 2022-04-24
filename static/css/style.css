@@ -5,6 +5,7 @@ display: none;
 * {
 margin: 0;
 padding: 0;
+box-sizing: border-box;
 
 }
 
@@ -28,6 +29,8 @@ justify-content: space-between;
 align-items: center;
 height: 70px;
 position: fixed;
+width:100%;
+z-index: 1;
 }
 
 .logo {
@@ -60,10 +63,7 @@ display: none;
 margin-left: .4rem;
 }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 90239469875d972b222030f9e9e3a4b899ca6418
 /*end of menu*/
 
 /* Openning Statement*/
@@ -106,29 +106,8 @@ margin-right: auto;
 
 
 
-<<<<<<< HEAD
 h1 {
 text-align: center;
-=======
-h1{
-    text-align:center;
-}
-.firstp{
-    text-align:center;
-}
-
-
-
-
-/*end of statement*/
-
-/*--------Newest Arrival --------*/
-
-.flex-container{
-    display:flex;
-    
-
->>>>>>> 90239469875d972b222030f9e9e3a4b899ca6418
 }
 
 .firstp {
@@ -136,40 +115,6 @@ text-align: center;
 }
 
 
-<<<<<<< HEAD
-
-=======
-.container { 
-    display: flex;
-    flex-wrap: wrap;
-    padding: 100px;
-    justify-content: space-around;
-    margin-bottom: 5rem;
-    margin-top:-90px;
-    background-color:darkgray;
-}
-
-
-.product{
-    display:flex;
-    margin: 5px;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    }
-
-    
-
-/* End of Newest arrival */
-h2 {
-    font-family: 'Times New Roman';
-    font-size: 1.5rem;
-    padding-left: .5rem;
-}
-/* Popular Item Flex Box */
->>>>>>> 90239469875d972b222030f9e9e3a4b899ca6418
 
 /*end of statement*/
 
@@ -183,17 +128,17 @@ box-sizing: border-box;
 }
 
 /* Slideshow container */
-.slideshow-container {
-max-width: 1000px;
-position: relative;
-margin: auto;
-}
+.slide-container{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+   
+  
+  }
 
 /* Hide the images by default */
-.mySlides {
-display:flex;
-height: 50px;
-width: 50px;
+.mySlides, .myslides1, .myslides2 {
+display:none;
 }
 
 /* Next & previous buttons */
@@ -271,11 +216,19 @@ to {
     opacity: 1
 }
 }
+.myslides{
+    text-align:center;
+}
+.carousel-img{
+    margin-left:15rem;
+}
 
 /*end of Newest Arrival */
 
 
-<<<<<<< HEAD
+
+
+
 /*Bottom Nav Footer*/
 .nav-footer {
     font-family: 'Times New Roman';
@@ -337,21 +290,13 @@ to {
     display: flex;
     justify-content: space-between;
 }
-=======
->>>>>>> 90239469875d972b222030f9e9e3a4b899ca6418
 
 
 /* 
 ------about me----------- */
 
-<<<<<<< HEAD
 .image-container-div {
     display: flex;
-=======
-.image-container-div{
-    display:flex;
-    
->>>>>>> 90239469875d972b222030f9e9e3a4b899ca6418
 }
 
 
@@ -381,14 +326,8 @@ to {
 
 
 
-<<<<<<< HEAD
 .aboutme-p-wrapper {
     display: flex;
-=======
-.aboutme-p-wrapper{
-    display:flex;
-    background-color:darkgray;
->>>>>>> 90239469875d972b222030f9e9e3a4b899ca6418
 
 }
 
@@ -398,21 +337,9 @@ p {
 
 /* ---------------------Registration---------------------------- */
 
-<<<<<<< HEAD
 .login_form {
     text-align: center;
     padding: 50px;
-=======
-.login_form{
-   text-align:center;
-    padding:50px;
-    background-color:darkgray;
-}
-
-.registeration-error{
-    text-align:center;
-    color:red;
->>>>>>> 90239469875d972b222030f9e9e3a4b899ca6418
 }
 
 .signup_form {
@@ -596,18 +523,9 @@ p {
         margin: 0;
     }
 }
-<<<<<<< HEAD
 .aboutme-p-wrapper {
     display: block;
     margin-top: 15rem;
     text-align: center;
     margin-left: 15rem;
-=======
-.aboutme-p-wrapper{
-    display:block;
-    margin-top:15rem;
-    text-align:center;
-  
-
->>>>>>> 90239469875d972b222030f9e9e3a4b899ca6418
 }
