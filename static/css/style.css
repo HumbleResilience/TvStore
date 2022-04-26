@@ -113,6 +113,11 @@ text-align: center;
 .firstp {
 text-align: center;
 }
+.firsth1{
+    text-align:center;
+    padding:3rem;
+
+}
 
 
 
@@ -137,7 +142,7 @@ box-sizing: border-box;
   }
 
 /* Hide the images by default */
-.mySlides, .myslides1, .myslides2 {
+.mySlides1, .myslides2, .myslides3 {
 display:none;
 }
 
@@ -170,11 +175,11 @@ background-color: rgba(0, 0, 0, 0.8);
 }
 /* Caption text */
 .text {
-color: #f2f2f2;
+color: black;
 font-size: 15px;
 padding: 8px 12px;
 position: absolute;
-bottom: 8px;
+margin-top:5px;
 width: 100%;
 text-align: center;
 }
@@ -185,7 +190,7 @@ color: #f2f2f2;
 font-size: 12px;
 padding: 8px 12px;
 position: absolute;
-top: 0;
+
 }
 /* The dots/bullets/indicators */
 .dot {
@@ -197,6 +202,7 @@ background-color: #bbb;
 border-radius: 50%;
 display: inline-block;
 transition: background-color 0.6s ease;
+margin-top:10px;
 }
 .active,
 .dot:hover {
