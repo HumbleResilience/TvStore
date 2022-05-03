@@ -6,15 +6,15 @@ from django.urls import reverse
 
 
 
-# - *- coding: utf- 8 - *-
+
 class Category(models.Model):
-    name = models.CharField(max_length=200, db_index=True, verbose_name='Имя')
+    name = models.CharField(max_length=200, db_index=True, verbose_name='Name')
     slug = models.SlugField(max_length=200, db_index=True, unique=True)
 
     class Meta:
         ordering = ['name']
-        verbose_name = 'Категория'
-        verbose_name_plural = 'Категории'
+        verbose_name = 'Category'
+        verbose_name_plural = 'Categories'
 
     def __str__(self):
         return self.name
