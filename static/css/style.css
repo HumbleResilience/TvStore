@@ -5,6 +5,7 @@ display: none;
 * {
 margin: 0;
 padding: 0;
+box-sizing: border-box;
 
 }
 
@@ -28,6 +29,8 @@ justify-content: space-between;
 align-items: center;
 height: 70px;
 position: fixed;
+width:100%;
+z-index: 1;
 }
 
 .logo {
@@ -60,10 +63,7 @@ display: none;
 margin-left: .4rem;
 }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 90239469875d972b222030f9e9e3a4b899ca6418
 /*end of menu*/
 
 /* Openning Statement*/
@@ -106,70 +106,20 @@ margin-right: auto;
 
 
 
-<<<<<<< HEAD
 h1 {
 text-align: center;
-=======
-h1{
-    text-align:center;
-}
-.firstp{
-    text-align:center;
-}
-
-
-
-
-/*end of statement*/
-
-/*--------Newest Arrival --------*/
-
-.flex-container{
-    display:flex;
-    
-
->>>>>>> 90239469875d972b222030f9e9e3a4b899ca6418
 }
 
 .firstp {
 text-align: center;
 }
+.firsth1{
+    text-align:center;
+    padding:3rem;
 
-
-<<<<<<< HEAD
-
-=======
-.container { 
-    display: flex;
-    flex-wrap: wrap;
-    padding: 100px;
-    justify-content: space-around;
-    margin-bottom: 5rem;
-    margin-top:-90px;
-    background-color:darkgray;
 }
 
 
-.product{
-    display:flex;
-    margin: 5px;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    }
-
-    
-
-/* End of Newest arrival */
-h2 {
-    font-family: 'Times New Roman';
-    font-size: 1.5rem;
-    padding-left: .5rem;
-}
-/* Popular Item Flex Box */
->>>>>>> 90239469875d972b222030f9e9e3a4b899ca6418
 
 /*end of statement*/
 
@@ -183,17 +133,17 @@ box-sizing: border-box;
 }
 
 /* Slideshow container */
-.slideshow-container {
-max-width: 1000px;
-position: relative;
-margin: auto;
-}
+.slide-container{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+   
+  
+  }
 
 /* Hide the images by default */
-.mySlides {
-display:flex;
-height: 50px;
-width: 50px;
+.mySlides1, .myslides2, .myslides3 {
+display:none;
 }
 
 /* Next & previous buttons */
@@ -225,11 +175,11 @@ background-color: rgba(0, 0, 0, 0.8);
 }
 /* Caption text */
 .text {
-color: #f2f2f2;
+color: black;
 font-size: 15px;
 padding: 8px 12px;
 position: absolute;
-bottom: 8px;
+margin-top:5px;
 width: 100%;
 text-align: center;
 }
@@ -240,7 +190,7 @@ color: #f2f2f2;
 font-size: 12px;
 padding: 8px 12px;
 position: absolute;
-top: 0;
+
 }
 /* The dots/bullets/indicators */
 .dot {
@@ -252,6 +202,7 @@ background-color: #bbb;
 border-radius: 50%;
 display: inline-block;
 transition: background-color 0.6s ease;
+margin-top:10px;
 }
 .active,
 .dot:hover {
@@ -271,11 +222,19 @@ to {
     opacity: 1
 }
 }
+.myslides{
+    text-align:center;
+}
+.carousel-img{
+    margin-left:15rem;
+}
 
 /*end of Newest Arrival */
 
 
-<<<<<<< HEAD
+
+
+
 /*Bottom Nav Footer*/
 .nav-footer {
     font-family: 'Times New Roman';
@@ -337,21 +296,13 @@ to {
     display: flex;
     justify-content: space-between;
 }
-=======
->>>>>>> 90239469875d972b222030f9e9e3a4b899ca6418
 
 
 /* 
 ------about me----------- */
 
-<<<<<<< HEAD
 .image-container-div {
     display: flex;
-=======
-.image-container-div{
-    display:flex;
-    
->>>>>>> 90239469875d972b222030f9e9e3a4b899ca6418
 }
 
 
@@ -381,14 +332,8 @@ to {
 
 
 
-<<<<<<< HEAD
 .aboutme-p-wrapper {
     display: flex;
-=======
-.aboutme-p-wrapper{
-    display:flex;
-    background-color:darkgray;
->>>>>>> 90239469875d972b222030f9e9e3a4b899ca6418
 
 }
 
@@ -398,21 +343,10 @@ p {
 
 /* ---------------------Registration---------------------------- */
 
-<<<<<<< HEAD
 .login_form {
     text-align: center;
     padding: 50px;
-=======
-.login_form{
-   text-align:center;
-    padding:50px;
-    background-color:darkgray;
-}
-
-.registeration-error{
-    text-align:center;
-    color:red;
->>>>>>> 90239469875d972b222030f9e9e3a4b899ca6418
+    text-decoration:none;
 }
 
 .signup_form {
@@ -424,6 +358,30 @@ p {
     background-color:darkgray;
 }
 
+/* ----------------------login page--------------------------- */
+
+.github-link, .google-link{
+    color:white;
+    
+}
+.github-link:hover, .google-link:hover{
+    
+    text-decoration:none;
+}
+
+
+
+/* --------------------==logout page -------------------------- */
+.logout-card{
+    margin:auto;
+    width: 50%;
+   
+}
+
+.card-body{
+    text-align:center;
+ 
+}
 
 
 /* ----------------------Contactus----------------------------- */
@@ -439,6 +397,7 @@ p {
 #dash-h1{
     border-bottom: 1px solid gray;
     padding:10px;
+    
 }
 
 
@@ -452,6 +411,46 @@ p {
 }
 .password-reset:hover{
     color:darkgray;
+}
+
+.helptext{
+    display:none;
+}
+
+.update{
+    padding:10px;
+    margin-bottom:5rem;
+}
+
+#id_password{
+ 
+}
+#id_username{
+    margin:auto;
+    width:20%;
+    text-align: center;
+}
+#id_email{
+    margin:auto;
+    width:20%;
+    text-align: center;
+}
+#id_last_name{
+    margin:auto;
+    width:20%;
+    text-align: center;
+}
+#id_first_name{
+    margin:auto;
+    width:20%;
+    text-align: center;
+}
+
+.label_class{
+    text-align:center;
+}
+.form-group{
+    text-align:center;
 }
 
 /* ---------------------Footer------------------------------- */
@@ -527,7 +526,7 @@ p {
         padding: 20px;
         width: 50%;
         margin-left: 12rem;
-        margin-top: 5rem;
+        margin-top:10rem;
     }
 
     .container-big {
@@ -595,19 +594,20 @@ p {
         width: 100%;
         margin: 0;
     }
-}
-<<<<<<< HEAD
-.aboutme-p-wrapper {
-    display: block;
-    margin-top: 15rem;
-    text-align: center;
-    margin-left: 15rem;
-=======
-.aboutme-p-wrapper{
-    display:block;
-    margin-top:15rem;
-    text-align:center;
-  
+    .aboutme-p-wrapper {
+        display: block;
+        margin-top: 15rem;
+        text-align: center;
+        margin-left: 15rem;
+    }
 
->>>>>>> 90239469875d972b222030f9e9e3a4b899ca6418
+    
+    /* ----------------logged out page---------- */
+    
+    .card{
+        margin-top:30%;
+    }
+
+    /* -------------Dashboard------------------ */
+   
 }

@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-
+{% load crispy_forms_tags %}
 {% block title %}Dashboard{% endblock title %}
 
 
@@ -8,14 +8,30 @@
 
 
 
-<h1 id="dash-h1">User Dashboard</h1>
+<h1 id="dash-h1">Welcome to your profile {{user.username}}!</h1>
 <div class="dash-container">
     <div class="dashboard-list">
-        <ul>
-            <li><h4><a class="password-reset" href="{% url 'change-password' %}"> Change Password</a></h4></li>
+            <h4><a class="password-reset" href="{% url 'change-password' %}"> Change Password</a></h4>
+            <h4>{{user.email}}</h4>
+            <img src="{{ request.user.profile.profile_image.url }}" width="180" height="180">
+            </li>
         </ul>
-        
+
     </div>
+</div>
+
+<div class="image-form">
+    
+</div>
+
+<div class="form-group">
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+
+
+        <button class="btn btn-secondary update">Update</button>
+    </form>
 </div>
 
 {% endblock content %}
