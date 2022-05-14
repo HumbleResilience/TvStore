@@ -346,6 +346,7 @@ p {
 .login_form {
     text-align: center;
     padding: 50px;
+    text-decoration:none;
 }
 
 .signup_form {
@@ -357,6 +358,30 @@ p {
     background-color:darkgray;
 }
 
+/* ----------------------login page--------------------------- */
+
+.github-link, .google-link{
+    color:white;
+    
+}
+.github-link:hover, .google-link:hover{
+    
+    text-decoration:none;
+}
+
+
+
+/* --------------------==logout page -------------------------- */
+.logout-card{
+    margin:auto;
+    width: 50%;
+   
+}
+
+.card-body{
+    text-align:center;
+ 
+}
 
 
 /* ----------------------Contactus----------------------------- */
@@ -372,6 +397,7 @@ p {
 #dash-h1{
     border-bottom: 1px solid gray;
     padding:10px;
+    
 }
 
 
@@ -385,6 +411,46 @@ p {
 }
 .password-reset:hover{
     color:darkgray;
+}
+
+.helptext{
+    display:none;
+}
+
+.update{
+    padding:10px;
+    margin-bottom:5rem;
+}
+
+#id_password{
+ 
+}
+#id_username{
+    margin:auto;
+    width:20%;
+    text-align: center;
+}
+#id_email{
+    margin:auto;
+    width:20%;
+    text-align: center;
+}
+#id_last_name{
+    margin:auto;
+    width:20%;
+    text-align: center;
+}
+#id_first_name{
+    margin:auto;
+    width:20%;
+    text-align: center;
+}
+
+.label_class{
+    text-align:center;
+}
+.form-group{
+    text-align:center;
 }
 
 /* ---------------------Footer------------------------------- */
@@ -460,7 +526,7 @@ p {
         padding: 20px;
         width: 50%;
         margin-left: 12rem;
-        margin-top: 5rem;
+        margin-top:10rem;
     }
 
     .container-big {
@@ -528,10 +594,20 @@ p {
         width: 100%;
         margin: 0;
     }
-}
-.aboutme-p-wrapper {
-    display: block;
-    margin-top: 15rem;
-    text-align: center;
-    margin-left: 15rem;
+    .aboutme-p-wrapper {
+        display: block;
+        margin-top: 15rem;
+        text-align: center;
+        margin-left: 15rem;
+    }
+
+    
+    /* ----------------logged out page---------- */
+    
+    .card{
+        margin-top:30%;
+    }
+
+    /* -------------Dashboard------------------ */
+   
 }
