@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'products.apps.ProductsConfig',
     'pdf_convert.apps.PdfConvertConfig',
     'send_email.apps.SendEmailConfig',
+    'cart.apps.CartConfig'
 ]
 
 CRISPY_TEMPLATE_PACK = 'uni_form'
@@ -159,3 +160,4 @@ LOGIN_URL = 'login'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 SESSION_COOKIE_AGE = 60 * 60 * 24 * 30
+CART_SESSION_ID = 'cart'

@@ -30,5 +30,8 @@ urlpatterns = [
     path('products/', include('products.urls')),
     path('pdf_convert/', include('django.contrib.auth.urls')),
     path('pdf_convert/', include('pdf_convert.urls')),
+    path('send_email/', include('django.contrib.auth.urls')),
+    path('send_email/', include('send_email.urls')),
+    path('cart/', include('cart.urls', namespace='cart')),
 ]  
 urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

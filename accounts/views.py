@@ -72,7 +72,7 @@ class CustomLoginView(LoginView):
 
             # -- set session to force data updates/cookie to be saved
             self.request.session.modified =True
-       
+
         # ----else, browser session will be as long as the session cookie time
             return super(CustomLoginView, self).form_valid(form)
 

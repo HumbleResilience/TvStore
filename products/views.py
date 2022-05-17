@@ -4,12 +4,13 @@ from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse, Http404
 from datetime import datetime
 from django.contrib.auth.models import User
-
+from . models import Product, Category, Comment
+from . forms import ProductForm, CommentForm
+from cart.forms import CartAddProductForm
 
 # Create your views here.
 
-from . models import Product, Category, Comment
-from . forms import ProductForm, CommentForm
+
 
 
 @login_required(login_url='accounts/login')
@@ -50,8 +51,9 @@ def productDetail(request, pk):
         'eachProduct': eachProduct,
         'num_comments': num_comments,
     }
-
-    return render(request, 'productDetail.html', context)
+    cart_product_form = CartAddProductForm()
+    return render(request, 'productDetail.html', context,{
+                    'cart_product_form':cart_product_form})
 
 
 @login_required(login_url='showProducts')

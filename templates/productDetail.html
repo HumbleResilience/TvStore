@@ -41,7 +41,10 @@
 
                 <h5><strong>{{ comment.commenter_name }}</strong></h5>
                 <p>{{ comment.comment_body }}</p>
+                <p class="price">USD{{ product.price }}</p>
                 <p><small>{{ comment.date_added }}</small></p>
+                <form action="{% url "cart:cart_add" product.id %}" method="post">
+                </form>
 
                 {% if request.user.username == comment.commenter_name %}
 
