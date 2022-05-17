@@ -52,7 +52,9 @@ INSTALLED_APPS = [
     'accounts',
     'pages',
     'crispy_forms',
-    
+    'products.apps.ProductsConfig',
+    'pdf_convert.apps.PdfConvertConfig',
+    'send_email.apps.SendEmailConfig',
 ]
 
 CRISPY_TEMPLATE_PACK = 'uni_form'

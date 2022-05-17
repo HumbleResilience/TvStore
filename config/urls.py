@@ -26,5 +26,9 @@ urlpatterns = [
     path('', include('pages.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
     path('accounts/', include('accounts.urls')),
+    path('products/', include('django.contrib.auth.urls')),
+    path('products/', include('products.urls')),
+    path('pdf_convert/', include('django.contrib.auth.urls')),
+    path('pdf_convert/', include('pdf_convert.urls')),
 ]  
 urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
