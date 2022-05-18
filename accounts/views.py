@@ -19,7 +19,7 @@ from .models import Profile
 
 # ----------------Profile view------------------
 class ManageAccountView(generic.UpdateView):
-    model= Profile
+    model = Profile
     template_name = 'registration/manage_account.html'
     form_class = EditProfileForm
     success_url = reverse_lazy('home')
@@ -33,16 +33,18 @@ class PasswordChangePageView(PasswordChangeView):
     from_class = PasswordChangeForm
     success_url = reverse_lazy('manage')
     template_name = "registration/change-password.html"
-    
+
 # ---------------------Register--------------------
-class RegisterView(View): 
+
+
+class RegisterView(View):
 
     form_class = RegisterForm
     initial = {'key': 'value'}
     template_name = 'registration/register.html'
 
     def get(self, request, *args, **kwargs):
-        form = self.form_class(initial= self.initial)
+        form = self.form_class(initial=self.initial)
         return render(request, self.template_name, {'form': form})
 
     def post(self, request, *args, **kwargs):
@@ -56,7 +58,7 @@ class RegisterView(View):
 
             return redirect(to='login')
 
-        return render(request, self.template_name,{'form': form})
+        return render(request, self.template_name, {'form': form})
 
 
 # --------------Login View----------------------------
@@ -71,10 +73,13 @@ class CustomLoginView(LoginView):
             self.request.session.set_expiry(0)
 
             # -- set session to force data updates/cookie to be saved
-            self.request.session.modified =True
+            self.request.session.modified = True
 
         # ----else, browser session will be as long as the session cookie time
             return super(CustomLoginView, self).form_valid(form)
+
+# ----------------Edit Profile--------------------------->
+
 
 # ----------------Edit Profile--------------------------->
 

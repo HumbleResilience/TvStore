@@ -20,13 +20,6 @@ class LoginPageView(TemplateView):
 class LogoutPageView(TemplateView):
     template_name = "registration/logged_out.html"
 
-
-class CatalogPageView(TemplateView):
-    template_name = "catalog.html"
-
-class CheckoutPageView(TemplateView):
-    template_name = "checkout.html"
-
 class PasswordChangePageView(TemplateView):
     template_name = "change-password.html"
 

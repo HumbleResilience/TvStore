@@ -1,0 +1,38 @@
+{% load static %}
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>{% block title %}Name Goes Here{% endblock %}</title>
+</head>
+
+<body>
+    <div id="header">
+        <a href="/" class="logo">TV STORE</a>
+    </div>
+    <div id="subheader">
+        <div class="cart">
+            {% with total_items=cart|length %}
+            {% if total_items >0 %}
+            Your Cart:
+            <a href="{% url "shoppingcart:cart_detail" %}">
+            {{ total_items }} items {{ total_items|pluralize }},
+            USD{{ cart.get_total_price }}
+            </a>
+            {% else %}
+            Your Cart is Empty.
+            {%% endif %}
+            {%% endwith %}
+
+
+        </div>
+    </div>
+    <div id="content">
+        {% block content %}
+        {% end block %}
+    </div>
+</body>
+
+</html>

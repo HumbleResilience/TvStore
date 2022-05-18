@@ -26,12 +26,11 @@ urlpatterns = [
     path('', include('pages.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
     path('accounts/', include('accounts.urls')),
-    path('products/', include('django.contrib.auth.urls')),
-    path('products/', include('products.urls')),
-    path('pdf_convert/', include('django.contrib.auth.urls')),
-    path('pdf_convert/', include('pdf_convert.urls')),
-    path('send_email/', include('django.contrib.auth.urls')),
-    path('send_email/', include('send_email.urls')),
     path('cart/', include('cart.urls', namespace='cart')),
+    path('cart/', include('django.contrib.auth.urls')),
+    path('shoppingcart/', include('shoppingcart.urls', namespace='shoppingcart')),
+    path('shoppingcart/', include('django.contrib.auth.urls')),
 ]  
-urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

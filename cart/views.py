@@ -1,29 +1,20 @@
+
 from django.shortcuts import render, get_object_or_404, redirect
-from django_countries import override
-from .cart import Cart
-from products.models import Product
-from .forms import CartAddProductForm
-from django.views.decorators.http import require_POST
+from .models import Category, Product
+from shoppingcart.forms import CartAddProductForm
 
 # Create your views here.
 
-@require_POST
-def cart_add(request,product_id):
-    cart=Cart(request)
-    product = get_object_or_404(Product, id=product_id)
-    form = CartAddProductForm(request.POST)
-    if form.is_valid():
-        cd= form.cleaned_data
-        cart.add(product=product, quanity=cd['quanity'], override_quanity=cd['override'])
-    return redirect ('cart:cart_detail')
+def product_list( request, category_slug=None):
+    category = None
+    categories = Category.objects.all()
+    products = Product.objects.filter(available = True)
+    if category_slug:
+        catergory = get_object_or_404(Category, slug=category_slug)
+        products = products.filter(category=category)
+    return render(request, 'cart/product/list.html', {'category':category, 'categories':categories, 'products':products})
 
-def cart_remove(request, product_id):
-    cart = Cart(request)
-    product = get_object_or_404(Product, id=product_id)
-    cart.remove(product)
-    return redirect('cart:cart_detail')
-
-
-def cart_detail(request):
-    cart = Cart(request)
-    return redirect(request, 'cart/detail.html', {'cart':cart})
+def product_detail(request, id, slug):
+    product = get_object_or_404(Product, id=id, slug=slug, available= True)
+    shoppingcart_product_form = CartAddProductForm
+    return render(request, 'cart/product/detail.html', {'product':product, 'shoppingcart_product_form':shoppingcart_product_form})

@@ -21,7 +21,7 @@ MESSAGE_TAGS = {
         messages.SUCCESS: 'alert-success',
         messages.WARNING: 'alert-warning',
         messages.ERROR: 'alert-danger',
- }
+}
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -52,10 +52,8 @@ INSTALLED_APPS = [
     'accounts',
     'pages',
     'crispy_forms',
-    'products.apps.ProductsConfig',
-    'pdf_convert.apps.PdfConvertConfig',
-    'send_email.apps.SendEmailConfig',
-    'cart.apps.CartConfig'
+    'cart.apps.CartConfig',
+    "shoppingcart.apps.ShoppingcartConfig",
 ]
 
 CRISPY_TEMPLATE_PACK = 'uni_form'
@@ -84,6 +82,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'shoppingcart.context_processors.cart',
             ],
         },
     },
@@ -160,4 +159,4 @@ LOGIN_URL = 'login'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 SESSION_COOKIE_AGE = 60 * 60 * 24 * 30
-CART_SESSION_ID = 'cart'
+CART_SESSION_ID = 'shoppingcart'
