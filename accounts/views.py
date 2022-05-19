@@ -5,11 +5,16 @@ from django.contrib.auth.forms import PasswordChangeForm, UserChangeForm
 from django.contrib import messages
 from django.views import View
 from django.shortcuts import render, redirect
-from accounts.forms import RegisterForm, LoginForm, EditProfileForm
+from accounts.forms import ImageForm, RegisterForm, LoginForm, EditProfileForm
 from django.views import generic
 
+from django.http import HttpResponse
 from .models import Profile
+from django.contrib.auth.models import User
 
+
+ 
+ 
 
 #  -------------Signup View---------------------------
 # class SignUpView(CreateView):
@@ -27,13 +32,36 @@ class ManageAccountView(generic.UpdateView):
     def get_object(self):
         return self.request.user
 
-
 # ------------------Password Change-----------------------
 class PasswordChangePageView(PasswordChangeView):
     from_class = PasswordChangeForm
     success_url = reverse_lazy('manage')
     template_name = "registration/change-password.html"
-    
+
+
+# -----------------profile image ---------------
+  
+# Create your views here.
+
+def profile_image_view(self, request):
+    user = User.get_username(self)
+    if request.method == 'POST':
+        form = ImageForm(request.POST, request.FILES)
+  
+        if form.is_valid():
+            form.save()
+            print("it worked")
+            return redirect('home')
+    else:
+        form = ImageForm()
+    return render(request, 'registration/profile-image.html', {'form' : form}, {'user': user})
+  
+  
+def success(request):
+    return HttpResponse('successfully uploaded')
+
+
+
 # ---------------------Register--------------------
 class RegisterView(View): 
 
