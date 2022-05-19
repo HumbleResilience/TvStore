@@ -26,9 +26,9 @@ urlpatterns = [
     path('', include('pages.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
     path('accounts/', include('accounts.urls')),
-    path('cart/', include('cart.urls', namespace='cart')),
+    path('cart/', include('cart.urls')),
     path('cart/', include('django.contrib.auth.urls')),
-    path('shoppingcart/', include('shoppingcart.urls', namespace='shoppingcart')),
+    path('shoppingcart/', include('shoppingcart.urls')),
     path('shoppingcart/', include('django.contrib.auth.urls')),
 ]  
 
