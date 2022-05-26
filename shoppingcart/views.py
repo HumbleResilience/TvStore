@@ -27,4 +27,4 @@ def cart_detail(request):
     cart = Cart(request)
     for item in cart:
         item['update_quanity_form'] = CartAddProductForm(initial={'quanity':item['quanity'], 'override':True})
-    return redirect(request, 'cart:detail.html', {'cart':cart})
+    return redirect(request, 'cart/product/detail.html', {'cart': cart})
