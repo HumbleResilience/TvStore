@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect
-from django_countries import override
+
 from .shoppingcart import Cart
 from cart.models import Product
 from .forms import CartAddProductForm

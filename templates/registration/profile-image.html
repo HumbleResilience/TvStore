@@ -11,10 +11,8 @@
 <h1 id="dash-h1">Welcome to your profile {{user.username}}!</h1>
 <div class="dash-container">
     <div class="dashboard-list">
-            <h4><a class="password-reset" href="{% url 'change-password' %}"> Change Password</a></h4>
             <h4>{{user.email}}</h4>
             <img src="{{ request.user.profile.profile_image.url }}" width="180" height="180">
-            <h3>To change your profile picture click <a href="{% url 'profile_image'  %}">here</a></h3>
             </li>
         </ul>
 
