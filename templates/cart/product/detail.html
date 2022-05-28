@@ -1,5 +1,6 @@
-{% extends 'base.html' %} {% load static %} {% block title %} {{ product.name }}
-{% endblock %} {% block content %}
+{% extends 'base.html' %} {% load static %} {% static 'css/cart.css' %} 
+{% block title %} {{ product.name }} {% endblock %} 
+{% block content %}
 <div class="product-detail">
   <img
     src="{% if product.images  %}{{ product.images.url }}{% else %}{% static 'images/no_image.png' %}{% endif %}"
@@ -11,7 +12,8 @@
     </a>
   </h2>
   <p class="price">USD{{ product.price }}</p>
-  <form action="{% url 'shoppingcart:cart_add' product.id %}" method="post">
+  
+  <form action="/shoppingcart/add/{{ product.id }}/" method="post">
     {{ shoppingcart_product_form }} {% csrf_token %}
     <input type="submit" value="Add to cart" />
   </form>
