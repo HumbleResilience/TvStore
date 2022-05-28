@@ -84,27 +84,6 @@
     {% block content %}
     {% load crispy_forms_tags %}
 
-    <!-- cart messages and quanity-->
-    <div class="cart">
-            {% with total_items=cart|length %}
-            <!--{% if total_items  %} -->
-            Your Cart:
-            <a href="/detail">
-            {{ total_items }} items {{ total_items|pluralize }},
-            USD{{ cart.get_total_price }}
-            </a>
-
-            {% else %}
-            Your Cart is Empty.
-            {% endif %}
-            {% endwith %}
-        </div>
-    </div>
-    <div id="content">
-        {% block cart_content %}
-        {% endblock %}
-    </div>
-
 
     <!-- message alerts -->
     {% for message in messages %}

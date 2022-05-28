@@ -1,4 +1,4 @@
-{% load static %} {% extends 'base.html' %}
+{% extends 'base.html' %} {% load static %} {% static 'css/cart.css' %}
 {% block title %} Shopping Cart {% endblock %}
 <h1>Shopping Cart</h1>
 <table class="cart">
@@ -13,18 +13,18 @@
 </tr>
 </thread>
 <tbody>
-{% for item in cart %} {% with product = item.product %}
+{% for item in cart %} {% endfor %}
 <tr>
     <td>
-    <a href="{{ product.get_absolute_url }}">
-        <img src="{% if product.image %}{{ product.image.url }} {% else %}
+    <a href="{{ item.product.get_absolute_url }}">
+        <img src="{% if item.product.image %}{{ item.product.image.url }} {% else %}
         {% static "images/no_image.png" %}{% endif %}">
     </a>
     </td>
-    <td>{{ product.name }}</td>
+    <td>{{ item.product.name }}</td>
     <td>
     <!-- <form action="{% url "cart:cart_add" product.id %}" method="post">  -->
-    <form action="{% url "cart:cart_add" product.id %}" method="post"> 
+    <form action="{% url 'cart:cart_add' item.product.id %}" method="post"> 
         {{ item.update_quanity_form.quanity }} 
         {{ item.update_quanity_form.override }}
         <input type="submit" value="Update" />
@@ -40,7 +40,7 @@
     <td class="num">USD{{ item.price }}</td>
     <td class="num">USD{{ item.total_price }}</td>
 </tr>
-{% endwith %} {% endfor %}
+
 <tr class="total">
     <td>Total</td>
     <td colspan="4"></td>
@@ -52,4 +52,4 @@
 <a href="" class="buttonlight">Continue Shopping</a>
 <a href="#" class="button">Checkout</a>
 </p>
-{% endblock %}
+
