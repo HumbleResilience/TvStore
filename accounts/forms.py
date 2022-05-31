@@ -3,6 +3,7 @@ from django import forms
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm, UserChangeForm
 from .models import Profile
+from django.forms import ModelForm
 
 
 
@@ -48,7 +49,12 @@ class EditProfileForm(UserChangeForm):
         fields=['profile_image','username', 'first_name', 'last_name', 'email']
 
 
+# -----------------------------------------Profile image form----------------------------------------------------
 
+class ImageForm(forms.ModelForm):
+    class Meta:
+        model = Profile
+        fields =('profile_image',)
 
 
 
