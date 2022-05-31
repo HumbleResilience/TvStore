@@ -13,14 +13,9 @@ from .models import Profile
 from django.contrib.auth.models import User
 
 
- 
- 
 
-#  -------------Signup View---------------------------
-# class SignUpView(CreateView):
-#     form_class = UserCreationForm
-#     success_url = reverse_lazy('login')
-#     template_name = 'registration/signup.html'
+ 
+ 
 
 # ----------------Profile view------------------
 class ManageAccountView(generic.UpdateView):
@@ -43,18 +38,27 @@ class PasswordChangePageView(PasswordChangeView):
   
 # Create your views here.
 
-def profile_image_view(self, request):
-    user = User.get_username(self)
+def profile_image_view(request):
+    # user = User.get_username()
     if request.method == 'POST':
         form = ImageForm(request.POST, request.FILES)
   
         if form.is_valid():
-            form.save()
-            print("it worked")
+            #form.save()
+            image = form["profile_image"].value()
+
+            profile = Profile.objects.get(user= request.user)
+            print(profile.id)
+            profile.profile_image = image
+            profile.save()
+
+            # update the profile model
+
+
             return redirect('home')
     else:
         form = ImageForm()
-    return render(request, 'registration/profile-image.html', {'form' : form}, {'user': user})
+    return render(request, 'registration/profile-image.html', {'form' : form, 'user': request.user.username})
   
   
 def success(request):

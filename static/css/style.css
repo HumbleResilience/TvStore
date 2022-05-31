@@ -422,9 +422,6 @@ p {
     margin-bottom:5rem;
 }
 
-#id_password{
- 
-}
 #id_username{
     margin:auto;
     width:20%;
@@ -445,6 +442,9 @@ p {
     width:20%;
     text-align: center;
 }
+#id_password{
+    display:none;
+}
 
 .label_class{
     text-align:center;
@@ -452,6 +452,7 @@ p {
 .form-group{
     text-align:center;
 }
+
 
 /* ---------------------Footer------------------------------- */
 

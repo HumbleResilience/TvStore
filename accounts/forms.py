@@ -37,7 +37,6 @@ class LoginForm(AuthenticationForm):
 
 class EditProfileForm(UserChangeForm):
     # fields we want to include and customize in our form
-    profile_image = forms.ImageField(required=False)
     first_name = forms.CharField(max_length=100, required=True, widget=forms.TextInput(attrs={'placeholder': 'First Name', 'class': 'form-control',}))
     last_name = forms.CharField(max_length=100, required=True, widget=forms.TextInput(attrs={'placeholder': 'Last Name', 'class': 'form-control',}))
     username = forms.CharField(max_length=100, required=True, widget=forms.TextInput(attrs={'placeholder': 'Username', 'class': 'form-control'}))
@@ -46,7 +45,7 @@ class EditProfileForm(UserChangeForm):
 
     class Meta:
         model=User
-        fields=['profile_image','username', 'first_name', 'last_name', 'email']
+        fields=['username', 'first_name', 'last_name', 'email']
 
 
 # -----------------------------------------Profile image form----------------------------------------------------
